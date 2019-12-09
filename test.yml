@@ -1,0 +1,6 @@
+- hosts: fedora
+  remote_user: [INSERT_USERNAME_HERE]
+  become: yes
+  become_user: root
+  roles:
+    - install_jenkins
