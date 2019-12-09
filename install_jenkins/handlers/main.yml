@@ -1,0 +1,11 @@
+---
+# handlers file for install_jenkins
+- name: Get Jenkins password
+  shell: sleep 30;cat {{ initpass_location }}
+  changed_when: false
+  register: init_password
+
+- name: Print Jenkins password
+  debug:
+    var: init_password.stdout
+    
