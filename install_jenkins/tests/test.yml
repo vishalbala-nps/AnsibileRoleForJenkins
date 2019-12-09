@@ -1,4 +1,0 @@
----
-- hosts: fedora
-  roles:
-    - install_jenkins
